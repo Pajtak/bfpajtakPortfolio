@@ -1,0 +1,168 @@
+.about__container {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+}
+
+.about__me {
+  width: fit-content;
+  height: fit-content;
+  aspect-ratio: 1/1;
+  border-radius: 20px 20px 20px 20px;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  display: grid;
+  place-items: center;
+}
+
+.about__me-image {
+  height: 100%;
+  width: 50vh;
+
+  border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
+  transform: rotate(10deg);
+  transition: all 400ms ease;
+}
+
+.about__me-image:hover {
+  transform: rotate(0deg);
+}
+
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.about__card {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about__card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.about__card h5 {
+  font-size: 0.95rem;
+}
+
+.about__card small {
+  font-size: 0.7rem;
+  color: var(--color-light);
+}
+
+.about__content p {
+  margin: 2rem 0 2.6rem;
+  color: var(--color-light);
+  overflow-wrap: break-word;
+  inline-size: 95vh;
+}
+
+about__icon {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+/*---------------Responsive CSS for Big Devices -----------------*/
+
+@media screen and (min-width: 1920px) {
+  .about__me {
+    margin-left: 200px;
+  }
+  .about__card {
+    margin-right: 100px;
+  }
+  .about__content p {
+    margin-right: 100px;
+  }
+}
+
+/*---------------Responsive CSS for Small Devices -----------------*/
+
+@media screen and (max-width: 850px) {
+  .about__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .about__me {
+    width: 70%;
+    margin: 0 auto 3rem;
+    justify-content: center;
+    display: flex;
+  }
+
+  .about__cards {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .about__content {
+    width: 100% !important;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__content p {
+    margin: 1.5rem 0;
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .about__me {
+    margin-left: 50px;
+  }
+  .about__card {
+    margin-right: 15px;
+  }
+  .about__content {
+    width: 100%;
+  }
+  .about__content p {
+    margin-right: 0px;
+    width: fit-content;
+  }
+}
+
+/*---------------Responsive CSS for Medium Devices -----------------*/
+
+@media screen and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .about__me {
+    justify-content: center;
+    display: flex;
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+  .about__content {
+    width: 100% !important;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__content p {
+    margin: 1rem 0 1.5rem;
+  }
+}

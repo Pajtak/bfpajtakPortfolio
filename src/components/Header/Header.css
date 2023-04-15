@@ -1,0 +1,120 @@
+header {
+  height: 90vh;
+  padding-top: 7rem;
+  overflow: hidden;
+  width: 90% !important;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/*--------------------CTA--------------------*/
+
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/*--------------------Header Socials--------------------*/
+
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  bottom: 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__socials {
+    margin-left: 200px;
+  }
+  .scroll__down {
+    margin-right: 200px;
+  }
+}
+
+.header__socials::after {
+  content: "";
+  width: 2px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+
+/*--------------------Imagem--------------------*/
+
+.me {
+  background: linear-gradient(var(--color-primary), transparent);
+  width: 22rem;
+  height: 23rem;
+  position: absolute;
+  left: calc(50% - 11rem);
+  margin-top: 4rem;
+  border-radius: 10rem 10rem 0 0;
+  overflow: hidden;
+}
+
+/*--------------------Scroll Down--------------------*/
+
+.scroll__down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+/*--------------------Responsive CSS Small Devices--------------------*/
+
+/*--------------------Responsive CSS Above than Middle Devices--------------------*/
+
+@media screen and (max-width: 1700px) {
+  header {
+    height: 120vh;
+  }
+  .me {
+    height: 60vh;
+  }
+  .header__socials {
+    margin-left: 200px;
+  }
+  .scroll__down {
+    margin-right: 200px;
+  }
+}
+/*--------------------Responsive CSS Medium Devices--------------------*/
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 71vh !important;
+    width: 100% !important;
+  }
+  .header__socials {
+    margin-left: 50px !important;
+  }
+  .scroll__down {
+    margin-right: 50px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    height: 89vh !important;
+  }
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    height: 124.6vh !important;
+  }
+}

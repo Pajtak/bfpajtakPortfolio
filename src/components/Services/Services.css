@@ -1,0 +1,97 @@
+.services__container {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  margin-left: 50px !important;
+  margin-right: 50px !important;
+}
+
+.service {
+  background-color: var(--color-bg-variant);
+  border-radius: 2rem 2rem 2rem 2rem;
+  border: 1pv solid var(--color-primary);
+  height: fit-content;
+  transition: all 400ms ease;
+}
+
+.service:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.service__head {
+  background: var(--color-primary);
+  padding: 2rem;
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.service__head h3 {
+  color: var(--color-bg);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.service__list {
+  padding: 2rem;
+}
+
+.service__list li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.service__list-icon {
+  color: var(--color-primary);
+  margin-top: 2px;
+}
+
+.service__list p {
+  font-size: 0.9rem;
+}
+
+/*--------------------Responsive CSS Medium Devices--------------------*/
+
+@media screen and (max-width: 1024px) {
+  .services__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .service {
+    height: auto;
+  }
+}
+
+/*--------------------Responsive CSS Above than Middle Devices--------------------*/
+
+@media screen and (max-width: 1700px) {
+  header {
+    height: 120vh;
+  }
+  .me {
+    height: 60vh;
+  }
+  .header__socials {
+    margin-left: 200px;
+  }
+  .scroll__down {
+    margin-right: 200px;
+  }
+}
+
+/*--------------------Responsive CSS Small Devices--------------------*/
+
+@media screen and (max-width: 600px) {
+  .services__container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .service {
+    margin-right: 50px;
+    margin-left: -10px;
+  }
+}
