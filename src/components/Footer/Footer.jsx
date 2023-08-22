@@ -5,8 +5,6 @@ import { BsDribbble } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 
 const Footer = () => {
-  var a = true + true + true * 3;
-  console.log(a);
   return (
     <footer>
       <a href="#header" className="footer__logo">

@@ -2,7 +2,7 @@ header {
   height: 90vh;
   padding-top: 7rem;
   overflow: hidden;
-  width: 90% !important;
+  width: 100% !important;
 }
 
 .header__container {
@@ -52,7 +52,7 @@ header {
 .me {
   background: linear-gradient(var(--color-primary), transparent);
   width: 22rem;
-  height: 23rem;
+  height: 23rem !important;
   position: absolute;
   left: calc(50% - 11rem);
   margin-top: 4rem;
@@ -96,6 +96,10 @@ header {
     height: 71vh !important;
     width: 100% !important;
   }
+
+  .me {
+    margin-top: 10rem;
+  }
   .header__socials {
     margin-left: 50px !important;
   }
@@ -107,6 +111,7 @@ header {
   header {
     height: 89vh !important;
   }
+
   .header__socials,
   .scroll__down {
     display: none;

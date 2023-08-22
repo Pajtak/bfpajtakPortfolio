@@ -47,19 +47,45 @@
   text-align: center;
 }
 
+.about__card__button {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+}
+
 .about__card:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
   cursor: default;
 }
 
+.about__card__button:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
 .about__card h5 {
   font-size: 0.95rem;
+}
+.about__card__button h5 {
+  font-size: 0.95rem;
+  color: white;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .about__card small {
   font-size: 0.7rem;
   color: var(--color-light);
+}
+
+.about__card__buton small {
+  font-size: 12rem;
+  color: white;
 }
 
 .about__content p {
@@ -69,10 +95,17 @@
   inline-size: 95vh;
 }
 
-about__icon {
+.about__icon {
   color: var(--color-primary);
   font-size: 1.4rem;
   margin-bottom: 1rem;
+}
+
+.about__icon__button {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  margin-left: 40%;
 }
 
 /*---------------Responsive CSS for Big Devices -----------------*/

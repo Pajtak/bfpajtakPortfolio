@@ -39,32 +39,17 @@
   .portfolio__container {
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
-    margin: 0 0 0 50px !important;
+    padding-left: 3rem !important;
   }
 }
 
 /*--------------------Responsive CSS Above than Middle Devices--------------------*/
 
-@media screen and (max-width: 1700px) {
-  header {
-    height: 120vh;
-  }
-  .me {
-    height: 60vh;
-  }
-  .header__socials {
-    margin-left: 200px;
-  }
-  .scroll__down {
-    margin-right: 200px;
-  }
-}
-
 /*--------------------Responsive CSS Small Devices--------------------*/
 
 @media screen and (max-width: 600px) {
   .portfolio__container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     gap: 1rem;
     margin-right: 20px !important;
   }

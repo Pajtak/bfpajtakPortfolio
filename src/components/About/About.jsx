@@ -30,18 +30,28 @@ const About = () => {
               <small>Mestre em História Professor de Inglês</small>
             </article>
 
-            <article className="about__card">
-              <VscFolderLibrary className="about__icon" />
+            <a href="#portfolio" className="about__card__button">
+              <VscFolderLibrary className="about__icon__button" />
               <h5>Projetos</h5>
-              <small>Conheça meus projetos</small>
-            </article>
+              <small
+                style={{
+                  color: "rgba(255, 255, 255, 0.6)",
+                  fontSize: "0.7rem",
+                  fontFamily: "Poppins",
+                }}
+              >
+                Conheça meus projetos
+              </small>
+            </a>
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
-            atque voluptate repellat modi aut incidunt consequuntur alias
-            cupiditate, repudiandae quisquam beatae explicabo eaque labore
-            laborum, ex nesciunt rem, rerum expedita?
+            Bacharel e Mestre em História pela Pontifícia Universidade Católica
+            de São Paulo, decidi mudar de carreira em 2021 quando terminei o
+            curso de formação da ONG Generation Brasil e me tornei um
+            desenvolvedor Full Stack, trabalhei por 1 ano e 3 meses na empresa
+            BEES Brasil como desenvolvedor Front End, desenvolvendo aplicações
+            com React.
           </p>
 
           <a href="contact" className="btn btn__primary">

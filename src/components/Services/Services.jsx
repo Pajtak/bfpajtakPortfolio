@@ -16,11 +16,11 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor, sit amet consectetur elit.</p>
+              <p>Desenvolvimento de aplicações Front End responsivas</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor, sit amet consectetur elit.</p>
+              <p>Versado em aplicações </p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
