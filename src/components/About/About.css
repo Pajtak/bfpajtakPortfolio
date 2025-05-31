@@ -47,7 +47,14 @@
   text-align: center;
 }
 
+.about__card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
 .about__card__button {
+  width: 204px;
   background: var(--color-bg-variant);
   border: 1px solid transparent;
   border-radius: 1rem;
@@ -57,16 +64,10 @@
   justify-content: center;
 }
 
-.about__card:hover {
-  background: transparent;
-  border-color: var(--color-primary-variant);
-  cursor: default;
-}
-
 .about__card__button:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
-  cursor: default;
+  cursor: pointer;
 }
 .about__card h5 {
   font-size: 0.95rem;
@@ -195,7 +196,18 @@
     flex-direction: column;
     align-items: center;
   }
+  .about__card__button {
+    width: 278.22px;
+    height: 165.61px;
+  }
   .about__content p {
     margin: 1rem 0 1.5rem;
+  }
+}
+
+@media screen and (max-height: 660px) {
+  .about__card__button {
+    width: 237px;
+    height: 192.8px;
   }
 }

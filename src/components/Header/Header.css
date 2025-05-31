@@ -1,6 +1,6 @@
 header {
   height: 90vh;
-  padding-top: 7rem;
+  padding-top: 0rem;
   overflow: hidden;
   width: 100% !important;
 }
@@ -28,7 +28,7 @@ header {
   align-items: center;
   gap: 0.8rem;
   position: absolute;
-  bottom: 3rem;
+  bottom: 15rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -65,7 +65,7 @@ header {
 .scroll__down {
   position: absolute;
   right: -2.3rem;
-  bottom: 5rem;
+  bottom: 19rem;
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
@@ -120,6 +120,18 @@ header {
 
 @media screen and (max-width: 400px) {
   header {
-    height: 124.6vh !important;
+    height: 90vh !important;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  header {
+    height: 120vh !important;
+  }
+  .header__socials {
+    bottom: 5rem;
+  }
+  .scroll__down {
+    bottom: 7rem;
   }
 }

@@ -1,0 +1,37 @@
+.note_section {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75vw;
+}
+
+.note_empty {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 2.5em;
+}
+
+/*---------------Responsive CSS for Small Devices -----------------*/
+
+@media screen and (max-width: 450px) {
+  .note_section {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    flex-wrap: wrap;
+  }
+  .note_empty {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2.5em;
+  }
+}
+
+/*---------------Responsive CSS for Medium Devices -----------------*/
+
+@media screen and (max-width: 1024px) {
+  .note_section {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+}

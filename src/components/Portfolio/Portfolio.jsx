@@ -11,9 +11,9 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: "Primeiro Projeto",
+    title: "Bloco de Notas",
     github: "https://www.github.com",
-    demo: "https://www.dribbble.com",
+    demo: "/notepad",
   },
   {
     id: 2,
@@ -76,7 +76,7 @@ const Portfolio = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Live Demo
+                  Demonstração
                 </a>
               </div>
             </article>

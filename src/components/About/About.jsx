@@ -49,9 +49,10 @@ const About = () => {
             Bacharel e Mestre em História pela Pontifícia Universidade Católica
             de São Paulo, decidi mudar de carreira em 2021 quando terminei o
             curso de formação da ONG Generation Brasil e me tornei um
-            desenvolvedor Full Stack, trabalhei por 1 ano e 3 meses na empresa
+            desenvolvedor Full Stack. Trabalhei por 1 ano e 3 meses na empresa
             BEES Brasil como desenvolvedor Front End, desenvolvendo aplicações
-            com React.
+            com React. Atualmente trabalho como desenvolvedor free-lancer e
+            estou realizando MBA na USP-Esalq em Engenharia de Software.
           </p>
 
           <a href="contact" className="btn btn__primary">

@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 import "./Contact.css";
 import { AiTwotoneMail } from "react-icons/ai";
-import { RiMessengerFill } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { BsLinkedin } from "react-icons/bs";
 
 const Contact = () => {
   const showToastMessage = () => {
@@ -47,11 +47,11 @@ const Contact = () => {
             </a>
           </article>
           <article className="contact__option">
-            <RiMessengerFill className="contact__option-icon" />
-            <h4>Messenger</h4>
+            <BsLinkedin className="contact__option-icon" />
+            <h4>LinkedIn</h4>
             <h5>Bruno Pajtak</h5>
             <a
-              href="https://m.me/bruno.pajtak"
+              href="https://www.linkedin.com/in/bruno-pajtak/"
               target="_blank"
               rel="noreferrer"
             >
