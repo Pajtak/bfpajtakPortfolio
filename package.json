@@ -11,17 +11,19 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.8.4",
+    "babel-eslint": "^10.1.0",
     "emailjs-com": "^3.2.0",
     "portfolio": "file:",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-modal": "^3.16.1",
-    "react-router-dom": "^6.15.0",
-    "react-scripts": "5.0.1",
-    "react-toastify": "^9.1.2",
+    "react-router-dom": "^7.6.1",
+    "react-scripts": "^5.0.1",
+    "react-toastify": "^11.0.5",
     "swiper": "^9.2.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.99.9"
   },
   "scripts": {
     "start": "react-scripts start",
